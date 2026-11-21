@@ -1,0 +1,7 @@
+/work/
+/backend/data/
+**/target/
+.idea/
+.vscode/
+*.iml
+.env
