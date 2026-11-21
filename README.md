@@ -7,6 +7,8 @@ Aplicación de escritorio para demostrar autenticación, autorización por ticke
 
 Consulta el [informe de seguridad de la API](SEGURIDAD-API.md) para ver las pruebas, los resultados y la demostración.
 
+Para preparar la exposición, abre la [guía de demostración en PDF](docs/GUIA-DE-DEMO.pdf).
+
 ## Ejecutar en local
 
 Instala un **JDK 21** y **Maven 3.9**. Comprueba la versión que usa Maven con `mvn -v`.
