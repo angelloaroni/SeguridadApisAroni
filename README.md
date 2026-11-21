@@ -48,7 +48,3 @@ Swagger UI está en http://127.0.0.1:8080/swagger-ui.html y el contrato OpenAPI 
 Para usar un cliente HTTP, conserva el mismo almacén de cookies a lo largo del flujo. Antes de una escritura, consulta `GET /api/csrf` y usa el `headerName` y el `token` de la respuesta. El login de Spring Security recibe `username` y `password` mediante `POST /api/login` con `application/x-www-form-urlencoded`. El cierre de sesión usa `POST /api/logout`. Ambas rutas las implementa Spring Security y se describen aquí. Las operaciones de negocio están en el contrato OpenAPI.
 
 La configuración de demo escucha por HTTP en la interfaz local. Para exponer el servicio fuera del equipo, configura HTTPS y activa el atributo Secure de la cookie.
-
-## Vista web
-
-Con el backend en ejecución, abre http://127.0.0.1:8080/ en el navegador. Esta interfaz vive en `frontend/web/` y usa la misma API, base de datos y sesión de Spring Security. El backend sirve los archivos web al empaquetar el proyecto, por lo que no hace falta iniciar otro servidor. El cliente JavaFX sigue disponible desde `frontend/`.

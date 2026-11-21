@@ -38,7 +38,7 @@ class SecurityConfig {
     SecurityFilterChain security(HttpSecurity http) throws Exception {
         return http.authorizeHttpRequests(auth -> auth
                         .dispatcherTypeMatchers(DispatcherType.ERROR).permitAll()
-                        .requestMatchers(HttpMethod.GET, "/", "/index.html", "/app.js", "/style.css", "/api/csrf", "/swagger-ui/**",
+                        .requestMatchers(HttpMethod.GET, "/api/csrf", "/swagger-ui/**",
                                 "/swagger-ui.html", "/v3/api-docs", "/v3/api-docs/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/register", "/api/login").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/tickets").hasRole("USER")
