@@ -5,6 +5,8 @@ Aplicación de escritorio para demostrar autenticación, autorización por ticke
 - `frontend/` contiene la aplicación JavaFX. Se comunica con la API por HTTP y mantiene la cookie de sesión en memoria.
 - `backend/` contiene la API, la configuración de seguridad y el esquema de base de datos.
 
+Consulta el [informe de seguridad de la API](SEGURIDAD-API.md) para ver las pruebas, los resultados y la demostración.
+
 ## Ejecutar en local
 
 Instala un **JDK 21** y **Maven 3.9**. Comprueba la versión que usa Maven con `mvn -v`.
