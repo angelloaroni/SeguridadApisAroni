@@ -1,0 +1,41 @@
+.root { -fx-font-family: "Segoe UI"; -fx-font-size: 14px; -fx-text-fill: #17243b; }
+.app-root { -fx-background-color: #f2f5fa; }
+.auth-card { -fx-background-color: white; -fx-background-radius: 18; -fx-padding: 36; -fx-effect: dropshadow(gaussian, rgba(35,54,86,0.12), 30, 0, 0, 8); }
+.eyebrow { -fx-text-fill: #4165c8; -fx-font-size: 11px; -fx-font-weight: bold; }
+.page-title { -fx-font-size: 29px; -fx-font-weight: bold; -fx-text-fill: #17243b; }
+.header-title { -fx-font-size: 23px; -fx-font-weight: bold; -fx-text-fill: #17243b; }
+.section-title { -fx-font-size: 21px; -fx-font-weight: bold; -fx-text-fill: #17243b; }
+.muted, .helper { -fx-text-fill: #64748b; }
+.helper { -fx-font-size: 12px; }
+.field-label { -fx-text-fill: #36465d; -fx-font-weight: bold; -fx-font-size: 12px; }
+.value { -fx-text-fill: #17243b; }
+.text-field, .text-area { -fx-background-color: #f8fafd; -fx-background-radius: 8; -fx-border-color: #d9e1ed; -fx-border-radius: 8; -fx-padding: 11 12; -fx-prompt-text-fill: #94a3b8; }
+.text-area { -fx-padding: 0; }
+.text-area .content { -fx-background-color: #f8fafd; -fx-background-radius: 8; -fx-padding: 11 12; }
+.text-field:focused, .text-area:focused { -fx-border-color: #5576d6; -fx-effect: dropshadow(gaussian, rgba(85,118,214,0.18), 8, 0, 0, 0); }
+.button { -fx-cursor: hand; -fx-font-weight: bold; -fx-background-radius: 8; -fx-padding: 10 16; }
+.primary { -fx-background-color: #4165c8; -fx-text-fill: white; }
+.primary:hover { -fx-background-color: #3356b5; }
+.secondary { -fx-background-color: white; -fx-border-color: #d9e1ed; -fx-border-radius: 8; -fx-text-fill: #334765; }
+.secondary:hover { -fx-background-color: #f1f5fb; }
+.link-button { -fx-background-color: transparent; -fx-text-fill: #4165c8; -fx-padding: 8 0; }
+.link-button:hover { -fx-text-fill: #264aa9; }
+.dashboard { -fx-padding: 26 32 30; }
+.header { -fx-padding: 0 0 22 0; }
+.tab-pane > .tab-header-area > .tab-header-background { -fx-background-color: transparent; }
+.tab-pane > .tab-header-area { -fx-padding: 0 0 12 0; }
+.tab-pane .tab { -fx-background-color: transparent; -fx-background-radius: 8; -fx-padding: 8 16; }
+.tab-pane .tab:selected { -fx-background-color: #e0e9fc; }
+.tab-pane .tab-label { -fx-text-fill: #64748b; -fx-font-weight: bold; }
+.tab-pane .tab:selected .tab-label { -fx-text-fill: #3659b4; }
+.tab-pane .focus-indicator { -fx-border-color: transparent; }
+.panel { -fx-background-color: white; -fx-background-radius: 14; -fx-padding: 24; }
+.list-view { -fx-background-color: #f8fafd; -fx-background-radius: 9; -fx-border-color: #e4eaf2; -fx-border-radius: 9; -fx-padding: 4; }
+.list-cell { -fx-background-color: transparent; -fx-padding: 12; -fx-border-color: transparent transparent #e9eef5 transparent; }
+.list-cell:filled:selected { -fx-background-color: #e7eefc; -fx-background-radius: 7; }
+.ticket-meta, .message-author { -fx-text-fill: #5470ad; -fx-font-size: 11px; -fx-font-weight: bold; }
+.ticket-subject { -fx-text-fill: #17243b; -fx-font-weight: bold; -fx-font-size: 15px; }
+.message-bubble { -fx-background-color: white; -fx-background-radius: 10; -fx-padding: 12 15; }
+.message-body { -fx-text-fill: #26374f; }
+.status { -fx-background-color: #e4edff; -fx-text-fill: #3155a5; -fx-padding: 10 32; }
+.status:error { -fx-background-color: #fff0ee; -fx-text-fill: #a63832; }

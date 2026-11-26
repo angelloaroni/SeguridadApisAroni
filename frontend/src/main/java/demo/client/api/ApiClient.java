@@ -1,4 +1,4 @@
-package demo.client;
+package demo.client.api;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -14,32 +14,32 @@ import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 import java.util.Map;
 
-final class ApiClient {
+public final class ApiClient {
     private final String base = System.getProperty("support.api", "http://127.0.0.1:8080");
     private final CookieManager cookies = new CookieManager();
     private final HttpClient http = HttpClient.newBuilder().cookieHandler(cookies)
             .connectTimeout(Duration.ofSeconds(5)).build();
     private final ObjectMapper json = new ObjectMapper();
 
-    JsonNode get(String path) throws IOException, InterruptedException {
+    public JsonNode get(String path) throws IOException, InterruptedException {
         return send(request(path));
     }
 
-    JsonNode write(String method, String path, Map<String, String> data)
+    public JsonNode write(String method, String path, Map<String, String> data)
             throws IOException, InterruptedException {
         return mutate(method, path, "application/json", json.writeValueAsString(data));
     }
 
-    void login(String username, String password) throws IOException, InterruptedException {
+    public void login(String username, String password) throws IOException, InterruptedException {
         mutate("POST", "/login", "application/x-www-form-urlencoded",
                 "username=" + encode(username) + "&password=" + encode(password));
     }
 
-    void logout() throws IOException, InterruptedException {
+    public void logout() throws IOException, InterruptedException {
         mutate("POST", "/logout", "application/x-www-form-urlencoded", "");
     }
 
-    void forgetSession() {
+    public void forgetSession() {
         cookies.getCookieStore().removeAll();
     }
 
@@ -70,8 +70,8 @@ final class ApiClient {
     }
 
 
-    static final class ApiError extends IOException {
-        final int status;
+    public static final class ApiError extends IOException {
+        public final int status;
 
         ApiError(int status) {
             super(switch (status) {
