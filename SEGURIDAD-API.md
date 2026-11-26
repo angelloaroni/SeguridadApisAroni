@@ -261,6 +261,6 @@ La ejecución comprobó que la API aplica el control de acceso por usuario, rol 
 
 ## Enlaces de entrega
 
-- Link Youtube: pendiente
-- Link Repositorio: pendiente
+- Link Youtube: https://www.youtube.com/watch?v=acPFzKPui4w
+- Link Repositorio: https://github.com/angelloaroni/SeguridadApisAroni
 - Link Aporte del grupo: pendiente
